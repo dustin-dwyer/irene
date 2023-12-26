@@ -1,0 +1,22 @@
+/* styles.css for irenedwyer.com*/
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    font-family: "Garamond", Times, serif;
+    background-color: #cccccc;
+    color: #000000;
+}
+
+/* styles.css or in your <style> tag */
+
+.bg-radial-gradient {
+    background: radial-gradient(circle, transparent 0, #ff0000 100%);
+    background: linear-gradient(to top left, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+                linear-gradient(to top right, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+                linear-gradient(to bottom left, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+                linear-gradient(to bottom right, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%);
+  }
+  
