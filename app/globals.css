@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: "Garamond", Times, serif;
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle, transparent 0, #ff0000 100%);
+  background: linear-gradient(to top left, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+              linear-gradient(to top right, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+              linear-gradient(to bottom left, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%),
+              linear-gradient(to bottom right, transparent 0, transparent 49.5%, #ff0000 49.5%, #ff0000 50%, transparent 50.5%, transparent 100%);
+}
+
+.bg-paper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
